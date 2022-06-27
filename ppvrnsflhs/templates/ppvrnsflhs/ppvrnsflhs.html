@@ -1,0 +1,48 @@
+{% extends 'ppvrnsflhs/base.html' %}
+{% load staticfiles %}
+{% load i18n %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <br>
+        </div>
+        <div class="row">
+            <ul class="nav nav-tabs nav-justified">
+                <li role="presentation" id='load-file-tab'><a href="">{% trans "Load file" %}</a></li>
+                <li role="presentation" class="disabled" id='data-processing-tab'><a href="">{% trans "Data processing" %}</a></li>
+                <li role="presentation" class="disabled" id='data-results-tab'><a href="">{% trans "Result" %}</a></li>
+            </ul>
+        </div>
+        <br>
+        <div class="row" id="load-file-row">
+            <form class="form-horizontal" role="form">
+                <div class="col-sm-5">
+                    <div class="form-group">
+                        <label for="name-calculation">{% trans 'Name of calculation' %}</label>
+                        <input id='name-calculation' type="text" class="form-control">
+                    </div>
+                    <div class="form-group" id="load-file-form"> 
+                        <label for="load-file-input">{% trans 'File' %}</label>
+                        <div class="input-group">
+                            <input id='load-file-input' type="file" class="form-control" required>
+                            <span class="input-group-addon" title="{% trans 'Select the archive with the extension .zip or .rar' %}">?</span>
+                        </div>
+                    </div>
+                    <button id='submit-load-file' type="submit" class="btn btn-default">{% trans 'Load file' %} <span id="spinner" class="glyphicon glyphicon-repeat fast-right-spinner" style="display: none;"></span></button>
+
+                </div>
+            </form>
+        </div>
+        <div class="row" id="data-processing-row" style="display: none;">
+            <div class="col-sm-5">
+                <div class="spin-wrapper">
+                    <div class="spinner">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="data-results-row" style="display: none;">
+        </div>
+    </div>
+{% endblock %}

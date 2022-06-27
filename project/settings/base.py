@@ -37,6 +37,7 @@ PROJECT_APPS = [
     'lmnad',
     'igwatlas',
     'igwcoeffs',
+    'ppvrnsflhs',
     'tank',
     'publications',
     'phenomenon_db'
@@ -157,6 +158,9 @@ SUIT_CONFIG = {
             'experiment',
         ]},
         {'app': 'igwcoeffs', 'label': 'IGW Калькулятор', 'models': [
+            'calculation',
+        ]},
+        {'app': 'ppvrnsflhs', 'label': 'Постобработка и визуализация RNSFLSH', 'models': [
             'calculation',
         ]},
         {'app': 'igwatlas', 'label': 'IGW Atlas', 'models': [
@@ -322,5 +326,5 @@ MESSAGE_TAGS = {
 YANDEX_TRANSLATE_API_KEY = os.getenv('YANDEX_TRANSLATE_API_KEY', 'base')
 GEOPOSITION_GOOGLE_MAPS_API_KEY = os.getenv('GEOPOSITION_GOOGLE_MAPS_API_KEY', 'base')
 
-DATA_UPLOAD_MAX_MEMORY_SIZE = 12621440
+DATA_UPLOAD_MAX_MEMORY_SIZE = 5368709120
 FILE_UPLOAD_PERMISSIONS = 0o644

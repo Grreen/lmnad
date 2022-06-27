@@ -8,10 +8,12 @@ from django.conf.urls.static import static
 
 from igwatlas.views import RecordsViewSet, WaveDataViewSet, SourceViewSet
 from igwcoeffs.views import CalculationViewSet
+from ppvrnsflhs.views import PostProcessingViewSet
 from publications.views import PublicationViewSet
 
 router = routers.DefaultRouter()
 router.register('calculation', CalculationViewSet, base_name='calculation')
+router.register('postprocessing', PostProcessingViewSet, base_name='postprocessing')
 router.register('publication', PublicationViewSet, base_name='publication')
 router.register('records', RecordsViewSet, base_name='records')
 router.register('wave_params', WaveDataViewSet, base_name='wave_params')
@@ -30,6 +32,7 @@ urlpatterns += i18n_patterns(
     path('', include('lmnad.urls')),
     path('', include('igwatlas.urls')),
     path('', include('igwcoeffs.urls')),
+    path('', include('ppvrnsflhs.urls')),
     path('', include('publications.urls')),
     path('', include('tank.urls')),
     path('', include('favicon.urls')),

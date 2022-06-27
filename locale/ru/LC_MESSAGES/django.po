@@ -371,6 +371,8 @@ msgstr "На карте"
 
 #: igwcoeffs/templates/igwcoeffs/igwcoeffs.html:12
 #: igwcoeffs/templates/igwcoeffs/igwcoeffs.html:39
+#: ppvrnsflhs/templates/ppvrnsflhs/ppvrnsflhs.html:12
+#: ppvrnsflhs/templates/ppvrnsflhs/ppvrnsflhs.html:29
 msgid "Load file"
 msgstr "Загрузить файл"
 
@@ -384,16 +386,30 @@ msgid "Start"
 msgstr "Начать"
 
 #: igwcoeffs/templates/igwcoeffs/igwcoeffs.html:15
+#: ppvrnsflhs/templates/ppvrnsflhs/ppvrnsflhs.html:14
 msgid "Result"
 msgstr "Результат"
 
+#: ppvrnsflhs/templates/ppvrnsflhs/ppvrnsflhs.html:13
+msgid "Data processing"
+msgstr "Обработка данных"
+
 #: igwcoeffs/templates/igwcoeffs/igwcoeffs.html:23
+#: ppvrnsflhs/templates/ppvrnsflhs/ppvrnsflhs.html:22
 msgid "Name of calculation"
 msgstr "Название расчёта"
 
 #: igwcoeffs/templates/igwcoeffs/igwcoeffs.html:27
 msgid "File"
 msgstr "Файл"
+
+#: ppvrnsflhs/templates/ppvrnsflhs/ppvrnsflhs.html:28
+msgid "No file selected"
+msgstr "Файл не выбран"
+
+#: ppvrnsflhs/templates/ppvrnsflhs/ppvrnsflhs.html:29
+msgid "Select the archive with the extension .zip or .rar"
+msgstr "Выберите архив с расширением .zip или .rar"
 
 #: igwcoeffs/templates/igwcoeffs/igwcoeffs.html:31
 msgid "Separator"
@@ -440,6 +456,7 @@ msgid "Second"
 msgstr "Вторая"
 
 #: igwcoeffs/templates/igwcoeffs/igwcoeffs.html:93
+#: ppvrnsflhs/templates/ppvrnsflhs/ppvrnsflhs.html:41
 msgid "Start calculation"
 msgstr "Старт расчёта"
 
